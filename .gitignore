@@ -1,0 +1,10 @@
+.build
+.mbed
+projectfiles
+*.py*
+BUILD
+mbed-os.lib
+mbed-os/
+LICENSE
+resources/
+
