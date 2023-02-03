@@ -217,6 +217,7 @@ void sendCMD(){
     PackAll();
 
     if(counter>100){
+        // printf("%.3f %.3f %.3f  \n\r", l1_state.a.p, l1_state.h.p, l1_state.k.p);
         printf("%.3f %.3f %.3f  \n\r", l1_state.a.p, l1_state.h.p, l1_state.k.p);
         counter = 0 ;
         }
@@ -378,7 +379,7 @@ void enable() {
 
 void print_pos() {
     if(counter>200){
-        printf("Positions: %.3f %.3f %.3f \n\r", l1_state.a.p, l1_state.h.p, l1_state.k.p);
+        printf("AbAd: %.5f, %3.5f / Hip: %.5f, %3.5f / Knee: %.5f, %3.5f \n\r", (l1_state.a.p/PI)*180, l1_state.a.t, (l1_state.h.p/PI)*180, l1_state.h.t, (l1_state.k.p/PI)*180, l1_state.k.t);
         counter = 0 ;
     }
 }
